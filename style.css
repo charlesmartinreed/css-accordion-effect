@@ -1,3 +1,58 @@
-body {
+/* CSS RESET */
 
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+@font-face {
+	font-family: 'Genericons';
+	src: url('genericons/genericons-regular-webfont.woff')format('woff'),
+	url('genericons/genericons-regular-webfont.eot')format('truetype')
+}
+
+body {
+	background: #222;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+	margin: 50px auto;
+	width: 90%;
+}
+
+header h1 {
+	color: #FFF;
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+/* think of this as the animatable container for our tab icons */
+.accordion {
+	background: #333;
+	width: 100%;
+	min-width: 800px;
+	display: block;
+	list-style-type: none;
+	overflow: hidden;
+	height: 200px;
+	font-size: 0px;
+}
+
+/* social media icons exist within these tabs */
+.tab {
+	display: inline-block;
+	background-color: #444;
+	border-right: 1px solid #333;
+	width: 80px;
+	height: 200px;
+	overflow: hidden;
+	position: relative;
+	margin: 0;
+	transition: all 0.5s ease-in-out 0.1s;
+}
+
+.tab:hover {
+	width: 450px;
 }
