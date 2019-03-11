@@ -58,6 +58,16 @@ header h1 {
 	width: 450px;
 }
 
+.tab:hover .social a:before {
+	/* move out of view */
+	margin-left: -100px;
+}
+
+.tab:hover .social a:after {
+	/* move into view */
+	margin-left: -5px;
+}
+
 .tab .content {
 	background: #FFF;
 	width: 360px;
@@ -87,6 +97,8 @@ header h1 {
 
 .social a:before,
 .social a:after {
+	/* transition the before out, after in, vice versa */
+	transition: all 0.4s ease-in-out 0.1s;
 	width: 80px;
 	height: 200px;
 	position: absolute;
@@ -96,6 +108,13 @@ header h1 {
 	display: block;
 	font: normal 30px Genericons;
 	color: white;
+}
+
+.social a:after {
+	font-size: 48px;
+	padding-left: 20px;
+	padding-top: 80px;
+	margin-left: 85px;
 }
 
 .youtube a:after {
