@@ -95,6 +95,59 @@ header h1 {
 	content: '\f213'
 }
 
+.youtube a:after {
+	background-color: #FF0000;
+}
+
+.twitter a:before,
+.twitter a:after {
+	/* the content corresponds to the icon */
+	content: '\f202'
+}
+
+.twitter a:after {
+	background-color: #6DC5DD;
+}
+.facebook a:before,
+.facebook a:after {
+	/* the content corresponds to the icon */
+	content: '\f204'
+}
+
+.facebook a:after {
+	background-color: #3B5998;
+}
+
+.linkedin a:before,
+.linkedin a:after {
+	/* the content corresponds to the icon */
+	content: '\f208'
+}
+
+.linkedin a:after {
+	background-color: #00A9CD;
+}
+
+.instagram a:before,
+.instagram a:after {
+	/* the content corresponds to the icon */
+	content: '\f215'
+}
+
+.instagram a:after {
+	background-color: #6DC993;
+}
+
+.github a:before,
+.github a:after {
+	/* the content corresponds to the icon */
+	content: '\f200'
+}
+
+.github a:after {
+	background-color: #6E5494;
+}
+
 .social a:before,
 .social a:after {
 	/* transition the before out, after in, vice versa */
@@ -115,8 +168,4 @@ header h1 {
 	padding-left: 20px;
 	padding-top: 80px;
 	margin-left: 85px;
-}
-
-.youtube a:after {
-	background-color: #FF0000;
 }
